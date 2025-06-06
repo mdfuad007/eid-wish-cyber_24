@@ -1,70 +1,55 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>Cyber 24 | ঈদ মোবারক</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Courier New', Courier, monospace;
-      background: black url('logo.png') no-repeat center center fixed;
-      background-size: contain;
-      color: #00ff00;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: contain;
+    color: #00ff00;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
 
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 0;
-    }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* আগে 0.7 ছিলো, এখন আরেকটু dark */
+    z-index: 0;
+  }
 
-    .message {
-      position: relative;
-      z-index: 1;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 50px 20px;
-      line-height: 1.6;
-      font-size: 1.3em;
-      animation: flicker 2s infinite alternate;
-    }
+  .message {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    line-height: 1.6;
+    font-size: 1.3em;
+    animation: flicker 2s infinite alternate;
+  }
 
-    .highlight {
-      font-size: 1.7em;
-      font-weight: bold;
-      color: #0f0;
-    }
+  .highlight {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #0f0;
+  }
 
-    .footer {
-      margin-top: 2em;
-      font-size: 1em;
-      opacity: 0.9;
-    }
+  .footer {
+    margin-top: 2em;
+    font-size: 1em;
+    opacity: 0.9;
+  }
 
-    @keyframes flicker {
-      0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; opacity: 1; }
-      50% { text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00; opacity: 0.95; }
-      100% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; opacity: 1; }
-    }
-  </style>
-</head>
-<body>
-  <div class="message">
-    <div class="highlight">🕋 ঈদ মোবারক 🕋</div>
-    <p>Cyber 24 পরিবার থেকে আমাদের সকল মেম্বারকে জানাই আন্তরিক শুভেচ্ছা ও ভালোবাসা।</p>
-    <p>ত্যাগের মহিমায় উদ্ভাসিত হোক ঈদুল আজহা—ভালোবাসা, <br>
-    সহানুভূতি আর মানবতার আলো ছড়িয়ে পড়ুক সবার মাঝে। ঈদ মোবারক!</p>
-    <div class="footer">
-      — #Team_Cyber_24<br>
-      🛡️ Keep learning, keep defending.
-    </div>
-  </div>
-</body>
-</html>
+  @keyframes flicker {
+    0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; opacity: 1; }
+    50% { text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00; opacity: 0.95; }
+    100% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; opacity: 1; }
+  }
+</style>
